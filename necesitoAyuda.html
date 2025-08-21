@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZENTRO - Tu bienestar importa, Siempre</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="ZENTRO es una plataforma diseñada para brindarte apoyo emocional y bienestar personal, conectándote con recursos y acompañamiento cuando más lo necesitas." />
+    <meta name="keywords" content="apoyo emocional, ayuda emocional, manejo de emociones, salud mental, bienestar adolescente, autoestima, estrés" />
+    <meta name="author" content="Lizarsaburu Alfaro Angie Diorela y Escobedo Quispe Angela Yadira" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="ZENTRO - Tu bienestar importa, Siempre" />
+    <meta property="og:description" content="Un refugio digital para tu salud emocional. Apoyo, recursos y acompañamiento para adolescentes." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zentro.com" />
+    <meta property="og:image" content="imagenes/logo zentro.png" />
+    
+      <!-- INSTAGRAM CARDS -->
+    <meta name="instagram:card" content="summary_large_image" />
+    <meta name="instagram:title" content="ZENTRO" />
+    <meta name="instagram:description" content="ZENTRO - una plataforma donde impota tu bienestar." />
+    <meta name="instagram:image" content="https://www.instagram.com/zentro.oficial.pe/" />
+     
+    <!-- TIKTOK CARDS -->
+    <meta name="tiktok:card" content="summary_large_image" />
+    <meta name="tiktok:title" content="ZENTRO" />
+    <meta name="tiktok:description" content="ZENTRO - una plataforma donde impota tu bienestar." />
+    <meta name="tiktok:image" content="https://www.tiktok.com/@zentro.pe?_t=ZS-8ySyZ3G5KdO&_r=1" />
+
+    <!-- FACEBOOK CARDS -->
+    <meta name="facebook:card" content="summary_large_image" />
+    <meta name="facebook:title" content="ZENTRO" />
+    <meta name="facebook:description" content="ZENTRO - una plataforma donde impota tu bienestar." />
+    <meta name="facebook:image" content="https://www.facebook.com/profile.php?id=61578749731365" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="imagenes/logo zentro.png" />
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="estilos/estilos.css" />
+    <link rel="stylesheet" href="estilos/necesitoAyuda.css">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+
+  <body>
+    <div class="grid-container">
+      <header class="header">
+        <div class="logo">
+          <img src="imagenes/logo zentro.png" alt="Logo de ZENTRO - Plataforma de apoyo emocional" />
+          <h1 class="titulo-logo">ZENTRO</h1>
+        </div>
+
+        <input
+          type="checkbox"
+          id="nav-toggle"
+          class="nav-toggle"
+          aria-hidden="true"
+        />
+        <label
+          for="nav-toggle"
+          class="nav-toggle-label"
+          aria-label="Abrir menú de navegación"
+          role="button"
+          tabindex="0"
+          ><span></span
+        ></label>
+        
+        <nav class="nav" role="navigation" aria-label="Navegación principal">
+          <ul>
+            <li><a href="index.html" aria-current="page">Inicio</a></li>
+            <li><a href="#que-es">¿Qué es ZENTRO?</a></li>
+            <li><a href="galeriaEmocional.html">Galería emocional</a></li>
+            <li><a href="#recursos">Recursos</a></li>
+            <li><a href="necesitoAyuda.html">Necesito ayuda</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <section class="formulario">
+      <h2><strong>¿Necesitas ayuda?</strong></h2><br>
+      <p>Todos necesitamos ayuda en algún momento, no tengas miedo de compartirlo con tus familiares y/o amigos. <br> Puedes prácticar aquí con nosotros:</p><br>
+      <form>
+        <h3><em>Cuéntanos cómo te sientes. Este espacio es tuyo.</em></h2>
+        <label for="nombre">Nombre (opcional):</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre" />
+
+        <label for="estado">¿Cómo te sientes hoy?</label>
+        <select id="estado" name="estado">
+          <option value="triste">Triste</option>
+          <option value="molesto">Molesto</option>
+          <option value="ansioso">Ansioso</option>
+          <option value="agotado">Agotado</option>
+          <option value="feliz">Feliz</option>
+          <option value="confundido">Confundido</option>
+        </select>
+
+        <label for="mensaje">Escribe lo que quieras compartir:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe lo que necesites aquí..."></textarea>
+
+        <button type="submit">Enviar</button>
+        <p>“Gracias por confiar en ZENTRO. No estás solo.<br>Puedes hablar con un profesional <a href=""><strong>aquí.</strong></a></p>
+      </form>
+    </section>
+
+    <footer class="footer" role="contentinfo">
+        <h2>ZENTRO</h2>
+        <nav aria-label="Navegación del pie de página">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#que-es">¿Qué es ZENTRO?</a></li>
+            <li><a href="galeriaEmocional.html">Galería emocional</a></li>
+            <li><a href="#recursos">Recursos</a></li>
+            <li><a href="necesitoAyuda.html">Necesito ayuda</a></li>
+          </ul>
+        </nav>
+        <p>© Proyecto ZENTRO – Fundamentos de Interfaces Web Interactivas</p>
+        <p>Hecho por Lizarsaburu Alfaro Angie Diorela y Escobedo Quispe Angela Yadira – Profesor: Giovanni Ramírez</p>
+      </footer>
+  </main>
+</body>
+</html>

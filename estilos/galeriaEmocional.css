@@ -1,0 +1,124 @@
+/* GALERÍA EMOCIONAL */
+#galeria {
+  padding: var(--spacing-lg) var(--spacing-md);
+  background-color: var(--color-white);
+  text-align: center;
+
+  h2 {
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-primary);
+    font-weight: 700;
+  }
+
+  > p {
+    font-size: clamp(0.875rem, 2.5vw, 1rem);
+    max-width: 50ch;
+    margin: 0 auto var(--spacing-md);
+    line-height: 1.7;
+  }
+
+  .emociones-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(15.625rem, 100%), 1fr));
+    gap: clamp(1rem, 3vw, 1.5rem);
+    padding: var(--spacing-md) 0;
+ 
+    .emojiEmociones {
+      font-size: clamp(4rem, 10vw, 9rem);
+      text-align: center;
+      margin: 0;
+      line-height: 1;
+    }
+
+    .textoGaleria {
+      font-size: clamp(0.8rem, 2vw, 1rem);
+      font-weight: 400;
+      line-height: 1.5;
+      margin-top: var(--spacing-sm);
+    }
+
+    .emoji-card-uno,
+    .emoji-card-dos,
+    .emoji-card-tres,
+    .emoji-card-cuatro,
+    .emoji-card-cinco,
+    .emoji-card-seis {
+      border: 4px solid var(--color-purple-text);
+      border-radius: var(--border-radius-large);
+      padding: clamp(1rem, 4vw, 2rem) var(--spacing-sm);
+      font-size: clamp(1rem, 3vw, 1.6rem);
+      font-weight: bold;
+      color: var(--color-primary);
+      box-shadow: var(--shadow-medium);
+      transition: var(--transition-base);
+
+      h2 {
+        margin-bottom: var(--spacing-xs);
+      }
+
+      strong {
+        display: block;
+        margin-bottom: var(--spacing-xs);
+      }
+
+      &:hover {
+        background-color: #ebe5ff;
+        transform: translateY(-5px);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      }
+    }
+
+    .emoji-card-uno {
+      background-color: var(--color-light-blue);
+    }
+
+    .emoji-card-dos {
+      background-color: var(--color-light-red);
+    }
+
+    .emoji-card-tres {
+      background-color: var(--color-light-gray);
+    }
+
+    .emoji-card-cuatro {
+      background-color: var(--color-light-purple);
+    }
+
+    .emoji-card-cinco {
+      background-color: var(--color-light-yellow);
+    }
+
+    .emoji-card-seis {
+      background-color: var(--color-accent);
+    }
+  }
+
+  /* RESPONSIVE STYLES */
+  @media (max-width: 48rem) {
+    padding: var(--spacing-md) var(--spacing-sm);
+
+    .emociones-grid {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-sm);
+      padding: var(--spacing-sm) 0;
+    }
+  }
+
+  @media (max-width: 30rem) {
+    .emociones-grid {
+      .emoji-card-uno,
+      .emoji-card-dos,
+      .emoji-card-tres,
+      .emoji-card-cuatro,
+      .emoji-card-cinco,
+      .emoji-card-seis {
+        padding: var(--spacing-sm);
+      }
+
+      .emojiEmociones {
+        font-size: 6rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,122 @@
+/* FORMULARIO – NECESITO AYUDA */
+.formulario {
+  padding: var(--spacing-lg) var(--spacing-md);
+  background-color: #f4f4fc;
+  text-align: center;
+  color: var(--color-primary);
+
+  h2 {
+    font-size: clamp(1.3rem, 3.5vw, 1.8rem);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-primary);
+  }
+
+  h3 {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-primary);
+    text-align: center;
+  }
+
+  > p {
+    font-size: clamp(0.875rem, 2.5vw, 1rem);
+    max-width: 50ch;
+    margin: 0 auto var(--spacing-md);
+    line-height: 1.7;
+  }
+
+  form {
+    max-width: 37.5rem;
+    margin: 0 auto;
+    background: var(--color-white);
+    padding: clamp(1rem, 4vw, 2rem);
+    border-radius: var(--border-radius-large);
+    box-shadow: var(--shadow-medium);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.75rem, 2.5vw, 1.2rem);
+    text-align: left;
+  }
+
+  label {
+    font-weight: 600;
+    color: var(--color-primary);
+    font-size: clamp(0.875rem, 2vw, 1rem);
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: clamp(0.5rem, 2vw, 0.75rem);
+    border: 2px solid #e5e7eb;
+    border-radius: var(--border-radius-medium);
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+
+    &:focus {
+      outline: none;
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px rgba(76, 43, 142, 0.1);
+    }
+
+    &:invalid {
+      border-color: #ef4444;
+    }
+  }
+
+  textarea {
+    min-height: 6rem;
+    resize: vertical;
+  }
+
+  button {
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+    font-weight: 900;
+    padding: clamp(0.625rem, 2vw, 0.75rem) clamp(1rem, 3vw, 2rem);
+    font-size: clamp(0.875rem, 2.5vw, 1rem);
+    border: none;
+    border-radius: var(--border-radius-xl);
+    cursor: pointer;
+    transition: var(--transition-base);
+    align-self: center;
+
+    &:hover,
+    &:focus {
+      background-color: #6744b9;
+      color: var(--color-white);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-medium);
+      outline: none;
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+
+  p {
+    text-align: center;
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
+    line-height: 1.6;
+
+    a {
+      color: var(--color-primary);
+      font-weight: bold;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+        outline: none;
+      }
+    }
+  }
+
+  /* RESPONSIVE STYLES */
+  @media (max-width: 48rem) {
+    padding: var(--spacing-md) var(--spacing-sm);
+  }
+}
